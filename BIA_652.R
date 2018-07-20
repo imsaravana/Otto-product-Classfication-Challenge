@@ -119,10 +119,4 @@ Pred<- predict(rf,test[2:27],type="class")
 Confusion<-table(Pred,test[,1])
 confusionMatrix(Confusion)
 
-#Kaggle Submission
-p_comp <- prcomp(Kaggle, scale. = T)
-Pca<-data.frame(p_comp$x)
-PCA<-data.frame(Pca[1:26])
-Pred<- predict(rf,PCA,type="class")
-Pred
-write.csv(Pred, file = "fo.csv")
+
