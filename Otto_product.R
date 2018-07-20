@@ -1,4 +1,4 @@
-setwd('C:/Users/Pradeeepkumar/Desktop/Product Classfication')
+
 
 #Load train data
 Whole<- read.csv('train.csv')
